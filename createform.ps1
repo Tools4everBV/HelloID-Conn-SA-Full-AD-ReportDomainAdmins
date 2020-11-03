@@ -186,7 +186,7 @@ try
     "templateOptions": {},
     "type": "markdown",
     "summaryVisibility": "Show",
-    "body": "The following report will show local AD accounts that are member of the \"Domain Admins\" groups. Please wait while the data is loading...",
+    "body": "The following report will show local AD accounts that are member of the \\"Domain Admins\\" groups. Please wait while the data is loading...",
     "requiresTemplateOptions": false
   },
   {
