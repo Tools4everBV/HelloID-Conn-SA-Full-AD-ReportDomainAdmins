@@ -239,7 +239,7 @@ try
   {
     "key": "exportReport",
     "templateOptions": {
-      "label": "Export report (local export on HelloID Agent server) (local export on HelloID Agent server)",
+      "label": "Export report (local export on HelloID Agent server)",
       "useSwitch": true,
       "checkboxLabel": "Yes",
       "mustBeTrue": true
