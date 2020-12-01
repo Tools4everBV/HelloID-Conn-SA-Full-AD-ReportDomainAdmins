@@ -29,3 +29,13 @@ After the all-in-one PowerShell script has run and created all the required reso
   <tr><td><strong>Variable name</strong></td><td><strong>Example value</strong></td><td><strong>Description</strong></td></tr>
   <tr><td>HIDreportFolder</td><td>C:\HIDreports\</td><td>Local folder on HelloID Agent server for exporting CSV reports</td></tr>
 </table>
+
+
+## Manual resources
+This Delegated Form uses the following resources in order to run
+
+### Task data source 'AD-user-generate-table-report-domain-admins'
+This task data source runs an Active Directory query to select the AD user accounts that are member of the group "Domain Admins"
+
+### Delegated form task 'AD-export-report-accounts-recently-created'
+This delegated form task runs the same Active Directory query as the task data source (AD query is defined at two places) and export the data to a local CSV file if selected in the form.
