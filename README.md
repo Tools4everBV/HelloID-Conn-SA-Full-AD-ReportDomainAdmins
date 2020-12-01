@@ -10,6 +10,7 @@ This HelloID Service Automation Delegated Form provides an Active Directory repo
 * [All-in-one PowerShell setup script](#all-in-one-powershell-setup-script)
   * [Getting started](#getting-started)
 * [Post-setup configuration](#post-setup-configuration)
+* [Manual resources](#manual-resources)
 
 
 ## All-in-one PowerShell setup script
