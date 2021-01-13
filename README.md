@@ -38,5 +38,5 @@ This Delegated Form uses the following resources in order to run
 ### Powershell data source 'AD-user-generate-table-report-domain-admins'
 This Powershell data source runs an Active Directory query to select the AD user accounts that are member of the group "Domain Admins"
 
-### Delegated form task 'AD-export-report-accounts-recently-created'
+### Delegated form task 'AD-export-report-accounts-domain-admins'
 This delegated form task runs the same Active Directory query as the task data source (AD query is defined at two places) and export the data to a local CSV file if selected in the form.
