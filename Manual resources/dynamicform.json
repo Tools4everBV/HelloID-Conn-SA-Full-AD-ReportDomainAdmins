@@ -1,68 +1,72 @@
 [
     {
-      "templateOptions": {},
-      "type": "markdown",
-      "summaryVisibility": "Show",
-      "body": "The following report will show local AD accounts that are member of the \"Domain Admins\" groups. Please wait while the data is loading...",
-      "requiresTemplateOptions": false
+        "templateOptions":  {
+
+                            },
+        "type":  "markdown",
+        "summaryVisibility":  "Show",
+        "body":  "The following report will show local AD accounts that are member of the \"Domain Admins\" groups. Please wait while the data is loading...",
+        "requiresTemplateOptions":  false
     },
     {
-      "key": "grid",
-      "templateOptions": {
-        "label": "Results",
-        "grid": {
-          "columns": [
-            {
-              "headerName": "Canonical Name",
-              "field": "CanonicalName"
-            },
-            {
-              "headerName": "Displayname",
-              "field": "Displayname"
-            },
-            {
-              "headerName": "UserPrincipalName",
-              "field": "UserPrincipalName"
-            },
-            {
-              "headerName": "Department",
-              "field": "Department"
-            },
-            {
-              "headerName": "Title",
-              "field": "Title"
-            },
-            {
-              "headerName": "Enabled",
-              "field": "Enabled"
-            }
-          ],
-          "height": 500,
-          "rowSelection": "single"
-        },
-        "dataSourceConfig": {
-          "dataSourceGuid": "a93df19b-8ad2-41b0-4eba-08d85bdd7a93",
-          "input": {
-            "propertyInputs": []
-          }
-        },
-        "useFilter": true,
-        "useDefault": false
-      },
-      "type": "grid",
-      "summaryVisibility": "Hide element",
-      "requiresTemplateOptions": true
+        "key":  "grid",
+        "templateOptions":  {
+                                "label":  "Results",
+                                "grid":  {
+                                             "columns":  [
+                                                             {
+                                                                 "headerName":  "Canonical Name",
+                                                                 "field":  "CanonicalName"
+                                                             },
+                                                             {
+                                                                 "headerName":  "Displayname",
+                                                                 "field":  "Displayname"
+                                                             },
+                                                             {
+                                                                 "headerName":  "UserPrincipalName",
+                                                                 "field":  "UserPrincipalName"
+                                                             },
+                                                             {
+                                                                 "headerName":  "Department",
+                                                                 "field":  "Department"
+                                                             },
+                                                             {
+                                                                 "headerName":  "Title",
+                                                                 "field":  "Title"
+                                                             },
+                                                             {
+                                                                 "headerName":  "Enabled",
+                                                                 "field":  "Enabled"
+                                                             }
+                                                         ],
+                                             "height":  500,
+                                             "rowSelection":  "single"
+                                         },
+                                "dataSourceConfig":  {
+                                                         "dataSourceGuid":  "$dataSourceGuid_0",
+                                                         "input":  {
+                                                                       "propertyInputs":  [
+
+                                                                                          ]
+                                                                   }
+                                                     },
+                                "useFilter":  true,
+                                "useDefault":  false
+                            },
+        "type":  "grid",
+        "summaryVisibility":  "Hide element",
+        "requiresTemplateOptions":  true
     },
     {
-      "key": "exportReport",
-      "templateOptions": {
-        "label": "Export report (local export on HelloID Agent server) ",
-        "useSwitch": true,
-        "checkboxLabel": "Yes",
-        "mustBeTrue": true
-      },
-      "type": "boolean",
-      "summaryVisibility": "Show",
-      "requiresTemplateOptions": true
+        "key":  "exportReport",
+        "templateOptions":  {
+                                "label":  "Export report (local export on HelloID Agent server)",
+                                "useSwitch":  true,
+                                "checkboxLabel":  "Yes",
+                                "mustBeTrue":  true
+                            },
+        "type":  "boolean",
+        "summaryVisibility":  "Show",
+        "requiresTemplateOptions":  true
     }
-  ]
+]
