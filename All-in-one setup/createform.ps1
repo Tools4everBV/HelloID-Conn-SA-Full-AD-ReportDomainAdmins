@@ -306,11 +306,11 @@ Invoke-HelloIDDatasource -DatasourceName "AD-user-generate-table-report-domain-a
 
 <# Begin: Dynamic Form "AD - Report - Accounts member of "Domain admins"" #>
 $tmpSchema = @"
-[{"templateOptions":{},"type":"markdown","summaryVisibility":"Show","body":"The following report will show local AD accounts that are member of the \"Domain Admins\" groups. Please wait while the data is loading...","requiresTemplateOptions":false},{"key":"grid","templateOptions":{"label":"Results","grid":{"columns":[{"headerName":"Canonical Name","field":"CanonicalName"},{"headerName":"Displayname","field":"Displayname"},{"headerName":"UserPrincipalName","field":"UserPrincipalName"},{"headerName":"Department","field":"Department"},{"headerName":"Title","field":"Title"},{"headerName":"Enabled","field":"Enabled"}],"height":500,"rowSelection":"single"},"dataSourceConfig":{"dataSourceGuid":"$dataSourceGuid_0","input":{"propertyInputs":[]}},"useFilter":true,"useDefault":false},"type":"grid","summaryVisibility":"Hide element","requiresTemplateOptions":true},{"key":"exportReport","templateOptions":{"label":"Export report (local export on HelloID Agent server)","useSwitch":true,"checkboxLabel":"Yes","mustBeTrue":true},"type":"boolean","summaryVisibility":"Show","requiresTemplateOptions":true}]
+[{"templateOptions":{},"type":"markdown","summaryVisibility":"Show","body":"The following report will show local AD accounts that are member of the Domain Admins groups. Please wait while the data is loading...","requiresTemplateOptions":false},{"key":"grid","templateOptions":{"label":"Results","grid":{"columns":[{"headerName":"Canonical Name","field":"CanonicalName"},{"headerName":"Displayname","field":"Displayname"},{"headerName":"UserPrincipalName","field":"UserPrincipalName"},{"headerName":"Department","field":"Department"},{"headerName":"Title","field":"Title"},{"headerName":"Enabled","field":"Enabled"}],"height":500,"rowSelection":"single"},"dataSourceConfig":{"dataSourceGuid":"$dataSourceGuid_0","input":{"propertyInputs":[]}},"useFilter":true,"useDefault":false},"type":"grid","summaryVisibility":"Hide element","requiresTemplateOptions":true},{"key":"exportReport","templateOptions":{"label":"Export report (local export on HelloID Agent server)","useSwitch":true,"checkboxLabel":"Yes","mustBeTrue":true},"type":"boolean","summaryVisibility":"Show","requiresTemplateOptions":true}]
 "@ 
 
 $dynamicFormGuid = [PSCustomObject]@{} 
-Invoke-HelloIDDynamicForm -FormName "AD - Report - Accounts member of "Domain admins"" -FormSchema $tmpSchema  -returnObject ([Ref]$dynamicFormGuid) 
+Invoke-HelloIDDynamicForm -FormName "AD - Report - Accounts member of ""Domain Admins""" -FormSchema $tmpSchema  -returnObject ([Ref]$dynamicFormGuid) 
 <# END: Dynamic Form #>
 
 <# Begin: Delegated Form Access Groups and Categories #>
@@ -358,7 +358,7 @@ $delegatedFormCategoryGuids = ($delegatedFormCategoryGuids | ConvertTo-Json -Com
 
 <# Begin: Delegated Form #>
 $delegatedFormRef = [PSCustomObject]@{guid = $null; created = $null} 
-Invoke-HelloIDDelegatedForm -DelegatedFormName "AD - Report - Accounts member of "Domain admins"" -DynamicFormGuid $dynamicFormGuid -AccessGroups $delegatedFormAccessGroupGuids -Categories $delegatedFormCategoryGuids -UseFaIcon "True" -FaIcon "fa fa-info-circle" -returnObject ([Ref]$delegatedFormRef) 
+Invoke-HelloIDDelegatedForm -DelegatedFormName "AD - Report - Accounts member of ""Domain Admins""" -DynamicFormGuid $dynamicFormGuid -AccessGroups $delegatedFormAccessGroupGuids -Categories $delegatedFormCategoryGuids -UseFaIcon "True" -FaIcon "fa fa-info-circle" -returnObject ([Ref]$delegatedFormRef) 
 <# End: Delegated Form #>
 
 <# Begin: Delegated Form Task #>
