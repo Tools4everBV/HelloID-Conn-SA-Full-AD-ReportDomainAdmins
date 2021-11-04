@@ -3,7 +3,13 @@
 This HelloID Service Automation Delegated Form provides an Active Directory report containing the user accounts that are member of "Domain Admins". The following options are available:
  1. Overview of AD user accounts that match this report
  2. Export data to a local CSV file on the HelloID Agent server (optional)
- 
+
+## Versioning
+| Version | Description | Date |
+| - | - | - |
+| 1.0.1   | Added version number and updated all-in-one script | 2021/11/04  |
+| 1.0.0   | Initial release | 2020/11/24  |
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 * [Description](#description)
@@ -11,6 +17,7 @@ This HelloID Service Automation Delegated Form provides an Active Directory repo
   * [Getting started](#getting-started)
 * [Post-setup configuration](#post-setup-configuration)
 * [Manual resources](#manual-resources)
+* [Getting help](#getting-help)
 
 
 ## All-in-one PowerShell setup script
@@ -41,5 +48,8 @@ This Powershell data source runs an Active Directory query to select the AD user
 ### Delegated form task 'AD-export-report-accounts-domain-admins'
 This delegated form task runs the same Active Directory query as the task data source (AD query is defined at two places) and export the data to a local CSV file if selected in the form.
 
-# HelloID Docs
+## Getting help
+_If you need help, feel free to ask questions on our [forum](https://forum.helloid.com/forum/helloid-connectors/service-automation/523-helloid-sa-active-directory-report-ad-accounts-memberof-domain-admin-group)_
+
+## HelloID Docs
 The official HelloID documentation can be found at: https://docs.helloid.com/
