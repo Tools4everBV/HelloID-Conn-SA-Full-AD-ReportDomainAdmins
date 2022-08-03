@@ -7,6 +7,7 @@ This HelloID Service Automation Delegated Form provides an Active Directory repo
 ## Versioning
 | Version | Description | Date |
 | - | - | - |
+| 1.0.2   | Added version number and updated code for SA-agent and auditlogging | 2022/08/03  |
 | 1.0.1   | Added version number and updated all-in-one script | 2021/11/04  |
 | 1.0.0   | Initial release | 2020/11/24  |
 
